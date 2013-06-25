@@ -4,3 +4,4 @@ base:
     - python
     - mongodb-10gen
     - redis
+    - postgresql
