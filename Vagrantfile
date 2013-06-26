@@ -8,6 +8,9 @@ Vagrant.configure("2") do |config|
 end
 
 Vagrant::Config.run do |config|
-  config.vm.forward_port 3200, 3200
+  config.vm.forward_port 8080, 8081
+  config.vm.forward_port 5000, 5001
+  config.vm.forward_port 27017, 27017
+  config.vm.forward_port 3200, 3201
 end
 

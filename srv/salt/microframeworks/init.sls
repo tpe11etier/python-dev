@@ -1,36 +1,21 @@
 flask:
-  cmd.run:
-    - name: sudo pip install flask
-    - cwd: /srv/
-    - require:
-      - pkg: python
+  pip.installed
 
 flask-sqlalchemy:
-  cmd.run:
-    - name: sudo pip install flask-sqlalchemy
-    - cwd: /srv/
-    - require:
-      - pkg: python
+  pip.installed
 
 flask-script:
-  cmd.run:
-    - name: sudo pip install flask-script
-    - cwd: /srv/
-    - require:
-      - pkg: python
+  pip.installed
 
 flask-wtf:
-  cmd.run:
-    - name: sudo pip install flask-wtf
-    - cwd: /srv/
-    - require:
-      - pkg: python
+  pip.installed
 
 bottle:
-  cmd.run:
-    - name: sudo pip install bottle
-    - cwd: /srv/
-    - require:
-      - pkg: python-pkgs
+  pip.installed
 
+cherrypy:
+  pip.installed
+
+itty:
+  pip.installed
 
